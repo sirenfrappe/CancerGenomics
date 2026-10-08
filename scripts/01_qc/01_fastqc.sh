@@ -15,7 +15,7 @@ set -euo pipefail
 
 PROJECT_DIR=/data/users/qwang/CancerGenomics
 INPUT_FASTQ_DIR=/data/courses/cancergenomics/VAR_CALLING/fastq
-OUTPUT_DIR="$PROJECT_DIR/output"
+OUTPUT_DIR="$PROJECT_DIR/output/01_qc/01_fastqc"
 IMAGE=/containers/apptainer/fastqc-0.12.1.sif
 
 mkdir -p "$OUTPUT_DIR"
