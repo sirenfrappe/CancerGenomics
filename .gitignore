@@ -1,2 +1,6 @@
 # fastq 
 *.fq.gz
+
+# bam
+*.bam
+*.bai
