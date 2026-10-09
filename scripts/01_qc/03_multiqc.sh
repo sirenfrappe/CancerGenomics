@@ -21,4 +21,4 @@ mkdir -p "$OUTPUT_DIR"
 apptainer exec \
     --bind "$PROJECT_DIR" \
     "$IMAGE" \
-    multiqc "$PROJECT_DIR" -o "$OUTPUT_DIR"
+    multiqc "$PROJECT_DIR" -o "$OUTPUT_DIR" -f
