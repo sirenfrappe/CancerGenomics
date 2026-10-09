@@ -1,0 +1,94 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 6114032
+total bases: 610431062
+Q20 bases: 604670439(99.0563%)
+Q30 bases: 566473371(92.7989%)
+
+Read2 before filtering:
+total reads: 6114032
+total bases: 610431062
+Q20 bases: 602298801(98.6678%)
+Q30 bases: 557584571(91.3428%)
+
+Read1 after filtering:
+total reads: 6114032
+total bases: 607564115
+Q20 bases: 604225554(99.4505%)
+Q30 bases: 566120490(93.1787%)
+
+Read2 after filtering:
+total reads: 6114032
+total bases: 605672261
+Q20 bases: 601658601(99.3373%)
+Q30 bases: 557082608(91.9776%)
+
+Filtering result:
+reads passed filter: 12228064
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads with adapter trimmed: 634
+bases trimmed due to adapters: 21317
+
+Duplication rate: 8.27806%
+
+Insert size peak (evaluated by paired-end reads): 168
+
+JSON report: /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/normal.json
+HTML report: /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/normal.html
+
+/usr/local/bin/fastp -w 4 -i /data/courses/cancergenomics/VAR_CALLING/fastq/normal.R1.fq.gz -I /data/courses/cancergenomics/VAR_CALLING/fastq/normal.R2.fq.gz -o /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/normal.R1.fq.gz -O /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/normal.R2.fq.gz -h /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/normal.html -j /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/normal.json --detect_adapter_for_pe --cut_tail 
+fastp v0.24.1, time used: 43 seconds
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 7956823
+total bases: 794368136
+Q20 bases: 786428137(99.0005%)
+Q30 bases: 731102618(92.0357%)
+
+Read2 before filtering:
+total reads: 7956823
+total bases: 794368136
+Q20 bases: 783099708(98.5815%)
+Q30 bases: 719166280(90.5331%)
+
+Read1 after filtering:
+total reads: 7956823
+total bases: 790160329
+Q20 bases: 785767752(99.4441%)
+Q30 bases: 730576445(92.4593%)
+
+Read2 after filtering:
+total reads: 7956823
+total bases: 787458008
+Q20 bases: 782170195(99.3285%)
+Q30 bases: 718433192(91.2345%)
+
+Filtering result:
+reads passed filter: 15913646
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads with adapter trimmed: 1434
+bases trimmed due to adapters: 50774
+
+Duplication rate: 8.11721%
+
+Insert size peak (evaluated by paired-end reads): 169
+
+JSON report: /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/tumor.json
+HTML report: /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/tumor.html
+
+/usr/local/bin/fastp -w 4 -i /data/courses/cancergenomics/VAR_CALLING/fastq/tumor.R1.fq.gz -I /data/courses/cancergenomics/VAR_CALLING/fastq/tumor.R2.fq.gz -o /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/tumor.R1.fq.gz -O /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/tumor.R2.fq.gz -h /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/tumor.html -j /data/users/qwang/CancerGenomics/output/01_qc/02_fastp/tumor.json --detect_adapter_for_pe --cut_tail 
+fastp v0.24.1, time used: 56 seconds
