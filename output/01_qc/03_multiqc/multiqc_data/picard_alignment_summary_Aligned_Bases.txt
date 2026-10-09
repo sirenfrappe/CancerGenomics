@@ -1,0 +1,3 @@
+Sample	Aligned Bases
+normal_marked	1211730153.0
+tumor_marked	1576222520.0

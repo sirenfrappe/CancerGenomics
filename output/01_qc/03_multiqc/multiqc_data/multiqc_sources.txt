@@ -1,4 +1,16 @@
 Module	Section	Sample Name	Source
+Picard	AlignmentSummaryMetrics	normal_marked	/data/users/qwang/CancerGenomics/output/04_metrics/normal.alignment_summary_metrics
+Picard	AlignmentSummaryMetrics	tumor_marked	/data/users/qwang/CancerGenomics/output/04_metrics/tumor.alignment_summary_metrics
+Picard	BaseDistributionByCycle	normal_marked_R1	/data/users/qwang/CancerGenomics/output/04_metrics/normal.base_distribution_by_cycle_metrics
+Picard	BaseDistributionByCycle	normal_marked_R2	/data/users/qwang/CancerGenomics/output/04_metrics/normal.base_distribution_by_cycle_metrics
+Picard	BaseDistributionByCycle	tumor_marked_R1	/data/users/qwang/CancerGenomics/output/04_metrics/tumor.base_distribution_by_cycle_metrics
+Picard	BaseDistributionByCycle	tumor_marked_R2	/data/users/qwang/CancerGenomics/output/04_metrics/tumor.base_distribution_by_cycle_metrics
+Picard	InsertSizeMetrics	normal_marked	/data/users/qwang/CancerGenomics/output/04_metrics/normal.insert_size_metrics
+Picard	InsertSizeMetrics	tumor_marked	/data/users/qwang/CancerGenomics/output/04_metrics/tumor.insert_size_metrics
+Picard	DuplicationMetrics	normal_sorted	/data/users/qwang/CancerGenomics/output/03_markduplicates/normal_metrics.txt
+Picard	DuplicationMetrics	tumor_sorted	/data/users/qwang/CancerGenomics/output/03_markduplicates/tumor_metrics.txt
+Picard	Histogram	normal_marked	/data/users/qwang/CancerGenomics/output/04_metrics/normal.quality_distribution_metrics
+Picard	Histogram	tumor_marked	/data/users/qwang/CancerGenomics/output/04_metrics/tumor.quality_distribution_metrics
 fastp	all_sections	normal	/data/users/qwang/CancerGenomics/output/01_qc/02_fastp/normal.json
 fastp	all_sections	tumor	/data/users/qwang/CancerGenomics/output/01_qc/02_fastp/tumor.json
 FastQC	all_sections	normal.R1	/data/users/qwang/CancerGenomics/output/01_qc/01_fastqc/normal.R1_fastqc.zip

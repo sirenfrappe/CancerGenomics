@@ -1,0 +1,49 @@
+## htsjdk.samtools.metrics.StringHeader
+# CollectMultipleMetrics --INPUT /data/users/qwang/CancerGenomics/output/03_markduplicates/normal_marked.bam --OUTPUT /data/users/qwang/CancerGenomics/output/04_metrics/normal --REFERENCE_SEQUENCE /data/courses/cancergenomics/VAR_CALLING/bwa_idx/genome.fa --ASSUME_SORTED true --STOP_AFTER 0 --METRIC_ACCUMULATION_LEVEL ALL_READS --PROGRAM CollectAlignmentSummaryMetrics --PROGRAM CollectBaseDistributionByCycle --PROGRAM CollectInsertSizeMetrics --PROGRAM MeanQualityByCycle --PROGRAM QualityScoreDistribution --INCLUDE_UNPAIRED false --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+## htsjdk.samtools.metrics.StringHeader
+# Started on: Fri Oct 09 16:16:33 CEST 2026
+
+
+## HISTOGRAM	java.lang.Byte
+QUALITY	COUNT_OF_Q
+1	9853
+2	87310
+3	117117
+4	69873
+5	289138
+6	96326
+7	141472
+8	339829
+9	374892
+10	464916
+11	365233
+12	388369
+13	419376
+14	367683
+15	384563
+16	441012
+17	651500
+18	922137
+19	1370704
+20	1437804
+21	1706126
+22	1871935
+23	1954581
+24	3136439
+25	5319743
+26	13201115
+27	10771266
+28	14078072
+29	29203976
+30	49509824
+31	84545693
+32	113543985
+33	145410024
+34	139617551
+35	128935382
+36	143343719
+37	143447576
+38	134000654
+39	40797052
+40	51638
+

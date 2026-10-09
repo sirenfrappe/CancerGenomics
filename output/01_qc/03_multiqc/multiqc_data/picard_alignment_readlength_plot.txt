@@ -1,0 +1,3 @@
+Sample	Mean Read Length
+normal_marked	99.217372
+tumor_marked	99.136197
