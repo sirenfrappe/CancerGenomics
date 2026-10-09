@@ -1,0 +1,5 @@
+Sample	Unique Reads	Duplicate Reads
+normal.R1	4487645.0	1626387.0
+normal.R2	4454860.0	1659172.0
+tumor.R1	5600010.0	2356813.0
+tumor.R2	5576659.0	2380164.0

@@ -7,7 +7,6 @@
 #SBATCH --mem=32G
 #SBATCH --time=02:00:00
 #SBATCH --account=class-407009-ws-2026
-#SBATCH --reservation=class-407009-2026-10-08
 #SBATCH --output=multiqc_%j.out
 #SBATCH --error=multiqc_%j.err
 

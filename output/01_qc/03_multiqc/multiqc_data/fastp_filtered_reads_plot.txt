@@ -1,0 +1,3 @@
+Sample	Passed Filter	Low Quality	Too Many N	Low Complexity	Too Short	Too Long
+normal	12228064.0	0.0	0.0	nan	0.0	0.0
+tumor	15913646.0	0.0	0.0	nan	0.0	0.0

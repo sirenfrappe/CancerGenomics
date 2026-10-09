@@ -1,0 +1,7 @@
+Sample	fastp-pct_duplication	fastp-after_filtering_q30_rate	fastp-after_filtering_q30_bases	fastp-filtering_result_passed_filter_reads	fastp-after_filtering_gc_content	fastp-pct_surviving	fastp-pct_adapter	fastp-before_filtering_read1_mean_length	fastp-before_filtering_read2_mean_length	fastqc-percent_duplicates	fastqc-percent_gc	fastqc-avg_sequence_length	fastqc-median_sequence_length	fastqc-percent_fails	fastqc-total_sequences
+normal	8.27806	92.5791	1123.203098	12.228064	47.167500000000004	100.0	0.005184794583999561	99.0	99.0						
+normal.R1										26.600899018354824	47.0	100.33640157591586	100	0.0	6.114032
+normal.R2										27.137117007149286	47.0	100.33640157591586	100	0.0	6.114032
+tumor	8.11721	91.84790000000001	1449.0096369999999	15.913646	47.902699999999996	100.0	0.009011134217765056	99.0	99.0						
+tumor.R1										29.620030600619188	47.0	100.33015582978281	100	0.0	7.956823
+tumor.R2										29.9134976320708	47.0	100.33015582978281	100	0.0	7.956823

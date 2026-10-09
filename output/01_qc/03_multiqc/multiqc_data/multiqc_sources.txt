@@ -1,0 +1,7 @@
+Module	Section	Sample Name	Source
+fastp	all_sections	normal	/data/users/qwang/CancerGenomics/output/01_qc/02_fastp/normal.json
+fastp	all_sections	tumor	/data/users/qwang/CancerGenomics/output/01_qc/02_fastp/tumor.json
+FastQC	all_sections	normal.R1	/data/users/qwang/CancerGenomics/output/01_qc/01_fastqc/normal.R1_fastqc.zip
+FastQC	all_sections	normal.R2	/data/users/qwang/CancerGenomics/output/01_qc/01_fastqc/normal.R2_fastqc.zip
+FastQC	all_sections	tumor.R1	/data/users/qwang/CancerGenomics/output/01_qc/01_fastqc/tumor.R1_fastqc.zip
+FastQC	all_sections	tumor.R2	/data/users/qwang/CancerGenomics/output/01_qc/01_fastqc/tumor.R2_fastqc.zip

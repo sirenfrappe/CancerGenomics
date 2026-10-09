@@ -1,0 +1,12 @@
+
+/// MultiQC 🔍 v1.33
+
+     version_check | MultiQC Version v1.35 now available!
+       file_search | Search path: /data/users/qwang/CancerGenomics
+
+             fastp | Found 2 reports
+            fastqc | Found 4 reports
+
+     write_results | Data        : output/01_qc/03_multiqc/multiqc_data
+     write_results | Report      : output/01_qc/03_multiqc/multiqc_report.html
+           multiqc | MultiQC complete
