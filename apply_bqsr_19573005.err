@@ -1,0 +1,112 @@
+WARNING: GATK v4.2.6.1 support for Java 11 is in beta state. Use at your own risk.
+Using GATK jar /mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx24g -XX:ActiveProcessorCount=4 -jar /mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar ApplyBQSR -R /data/courses/cancergenomics/VAR_CALLING/bwa_idx/genome.fa -I /data/users/qwang/CancerGenomics/output/03_markduplicates/normal_marked.bam --bqsr-recal-file /data/users/qwang/CancerGenomics/output/05_bqsr/normal_recal.table -O /data/users/qwang/CancerGenomics/output/05_bqsr/normal_bqsr.bam --create-output-bam-index false
+16:28:35.935 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+16:28:36.162 INFO  ApplyBQSR - ------------------------------------------------------------
+16:28:36.163 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.2.6.1
+16:28:36.163 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
+16:28:36.163 INFO  ApplyBQSR - Executing as qwang@binfservas11 on Linux v4.18.0-553.85.1.el8_10.x86_64 amd64
+16:28:36.163 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v11.0.18+10
+16:28:36.163 INFO  ApplyBQSR - Start Date/Time: October 12, 2026 at 4:28:35 PM CEST
+16:28:36.163 INFO  ApplyBQSR - ------------------------------------------------------------
+16:28:36.164 INFO  ApplyBQSR - ------------------------------------------------------------
+16:28:36.164 INFO  ApplyBQSR - HTSJDK Version: 2.24.1
+16:28:36.164 INFO  ApplyBQSR - Picard Version: 2.27.1
+16:28:36.164 INFO  ApplyBQSR - Built for Spark Version: 2.4.5
+16:28:36.165 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+16:28:36.165 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+16:28:36.165 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+16:28:36.165 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+16:28:36.165 INFO  ApplyBQSR - Deflater: IntelDeflater
+16:28:36.165 INFO  ApplyBQSR - Inflater: IntelInflater
+16:28:36.165 INFO  ApplyBQSR - GCS max retries/reopens: 20
+16:28:36.165 INFO  ApplyBQSR - Requester pays: disabled
+16:28:36.165 INFO  ApplyBQSR - Initializing engine
+16:28:37.598 INFO  ApplyBQSR - Done initializing engine
+16:28:37.614 INFO  ProgressMeter - Starting traversal
+16:28:37.615 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+16:28:47.621 INFO  ProgressMeter -        chr6:25488602              0.2                457000        2740629.7
+16:28:57.632 INFO  ProgressMeter -        chr6:44158997              0.3               1105000        3312350.1
+16:29:07.637 INFO  ProgressMeter -        chr6:75109171              0.5               1773000        3543401.5
+16:29:17.646 INFO  ProgressMeter -        chr6:99609310              0.7               2422000        3630186.6
+16:29:27.656 INFO  ProgressMeter -       chr6:121654088              0.8               3095000        3710957.0
+16:29:37.668 INFO  ProgressMeter -       chr6:144660289              1.0               3809000        3805638.4
+16:29:47.672 INFO  ProgressMeter -       chr6:160618286              1.2               4526000        3876327.5
+16:29:57.677 INFO  ProgressMeter -        chr17:3033371              1.3               5173000        3876745.5
+16:30:07.683 INFO  ProgressMeter -        chr17:8075684              1.5               5884000        3919705.1
+16:30:17.695 INFO  ProgressMeter -       chr17:17972261              1.7               6599000        3956235.0
+16:30:27.697 INFO  ProgressMeter -       chr17:27560260              1.8               7314000        3986482.8
+16:30:38.675 INFO  ProgressMeter -       chr17:35021252              2.0               7986000        3958070.0
+16:30:48.677 INFO  ProgressMeter -       chr17:41149365              2.2               8717000        3990630.4
+16:30:58.683 INFO  ProgressMeter -       chr17:46331059              2.4               9431000        4011257.0
+16:31:08.686 INFO  ProgressMeter -       chr17:58323450              2.5              10161000        4035585.9
+16:31:18.690 INFO  ProgressMeter -       chr17:64815226              2.7              10857000        4044203.0
+16:31:28.697 INFO  ProgressMeter -       chr17:76061127              2.9              11574000        4059129.9
+16:31:38.516 WARN  IntelInflater - Zero Bytes Written : 0
+16:31:38.521 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
+
+16:31:38.521 INFO  ProgressMeter - chrUn_GL000224v1:25975              3.0              12246856        4061840.7
+16:31:38.521 INFO  ProgressMeter - Traversal complete. Processed 12246856 total reads in 3.0 minutes.
+16:31:38.568 INFO  ApplyBQSR - Shutting down engine
+[October 12, 2026 at 4:31:38 PM CEST] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 3.05 minutes.
+Runtime.totalMemory()=2147483648
+Using GATK jar /mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx24g -XX:ActiveProcessorCount=4 -jar /mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar ApplyBQSR -R /data/courses/cancergenomics/VAR_CALLING/bwa_idx/genome.fa -I /data/users/qwang/CancerGenomics/output/03_markduplicates/tumor_marked.bam --bqsr-recal-file /data/users/qwang/CancerGenomics/output/05_bqsr/tumor_recal.table -O /data/users/qwang/CancerGenomics/output/05_bqsr/tumor_bqsr.bam --create-output-bam-index false
+16:32:00.750 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+16:32:00.864 INFO  ApplyBQSR - ------------------------------------------------------------
+16:32:00.864 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.2.6.1
+16:32:00.865 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
+16:32:00.865 INFO  ApplyBQSR - Executing as qwang@binfservas11 on Linux v4.18.0-553.85.1.el8_10.x86_64 amd64
+16:32:00.865 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v11.0.18+10
+16:32:00.865 INFO  ApplyBQSR - Start Date/Time: October 12, 2026 at 4:32:00 PM CEST
+16:32:00.865 INFO  ApplyBQSR - ------------------------------------------------------------
+16:32:00.865 INFO  ApplyBQSR - ------------------------------------------------------------
+16:32:00.866 INFO  ApplyBQSR - HTSJDK Version: 2.24.1
+16:32:00.866 INFO  ApplyBQSR - Picard Version: 2.27.1
+16:32:00.866 INFO  ApplyBQSR - Built for Spark Version: 2.4.5
+16:32:00.866 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+16:32:00.866 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+16:32:00.866 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+16:32:00.866 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+16:32:00.866 INFO  ApplyBQSR - Deflater: IntelDeflater
+16:32:00.866 INFO  ApplyBQSR - Inflater: IntelInflater
+16:32:00.867 INFO  ApplyBQSR - GCS max retries/reopens: 20
+16:32:00.867 INFO  ApplyBQSR - Requester pays: disabled
+16:32:00.867 INFO  ApplyBQSR - Initializing engine
+16:32:01.052 INFO  ApplyBQSR - Done initializing engine
+16:32:01.069 INFO  ProgressMeter - Starting traversal
+16:32:01.069 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+16:32:11.075 INFO  ProgressMeter -         chr6:7181987              0.2                504000        3022488.8
+16:32:21.076 INFO  ProgressMeter -        chr6:25855063              0.3               1181000        3541937.4
+16:32:31.078 INFO  ProgressMeter -        chr6:35053869              0.5               1851000        3700889.7
+16:32:41.085 INFO  ProgressMeter -        chr6:42014750              0.7               2468000        3700519.8
+16:32:51.098 INFO  ProgressMeter -        chr6:50913064              0.8               3117000        3738231.8
+16:33:01.110 INFO  ProgressMeter -        chr6:73056271              1.0               3810000        3807398.3
+16:33:11.124 INFO  ProgressMeter -        chr6:89864192              1.2               4413000        3779601.7
+16:33:21.126 INFO  ProgressMeter -       chr6:116237935              1.3               5059000        3791548.5
+16:33:31.135 INFO  ProgressMeter -       chr6:130120713              1.5               5686000        3787888.9
+16:33:41.142 INFO  ProgressMeter -       chr6:146399068              1.7               6329000        3794629.9
+16:33:51.151 INFO  ProgressMeter -       chr6:159798093              1.8               6982000        3805526.8
+16:34:01.161 INFO  ProgressMeter -        chr17:1464579              2.0               7647000        3820570.9
+16:34:11.162 INFO  ProgressMeter -        chr17:5167935              2.2               8254000        3806844.4
+16:34:21.214 INFO  ProgressMeter -        chr17:8548329              2.3               8906000        3812908.1
+16:34:31.311 INFO  ProgressMeter -       chr17:16840922              2.5               9572000        3822658.3
+16:34:41.320 INFO  ProgressMeter -       chr17:20444974              2.7              10229000        3829866.9
+16:34:51.589 INFO  ProgressMeter -       chr17:32045598              2.8              10877000        3827234.3
+16:35:01.594 INFO  ProgressMeter -       chr17:40464739              3.0              11543000        3836476.9
+16:35:11.597 INFO  ProgressMeter -       chr17:45232634              3.2              12165000        3830933.0
+16:35:21.608 INFO  ProgressMeter -       chr17:58363104              3.3              12818000        3835083.6
+16:35:31.621 INFO  ProgressMeter -       chr17:64895554              3.5              13433000        3827956.2
+16:35:41.622 INFO  ProgressMeter -       chr17:73379137              3.7              14047000        3821394.4
+16:35:51.626 INFO  ProgressMeter -       chr17:76721778              3.8              14728000        3832804.9
+16:36:01.638 INFO  ProgressMeter -       chr17:81197748              4.0              15359000        3830668.1
+16:36:10.204 WARN  IntelInflater - Zero Bytes Written : 0
+16:36:10.207 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
+
+16:36:10.207 INFO  ProgressMeter - chrUn_KI270745v1:38467              4.2              15929334        3836267.6
+16:36:10.207 INFO  ProgressMeter - Traversal complete. Processed 15929334 total reads in 4.2 minutes.
+16:36:10.256 INFO  ApplyBQSR - Shutting down engine
+[October 12, 2026 at 4:36:10 PM CEST] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 4.16 minutes.
+Runtime.totalMemory()=2822766592
