@@ -12,7 +12,7 @@
 
 set -euo pipefail
 
-module load GATK/4.2.6.1-GCCcore-10.3.0-Java-11
+module load GATK/4.2.6.1-GCCcore-10.3.0-Java-11 BCFtools/1.12-GCC-10.3.0
 
 PROJECT_DIR=/data/users/qwang/CancerGenomics
 OUTPUT_DIR="$PROJECT_DIR/output/07_variant_calling"
@@ -26,3 +26,8 @@ gatk --java-options "-Xmx6g -XX:ActiveProcessorCount=4" FilterMutectCalls \
     --stats "$OUTPUT_DIR/somatic.vcf.gz.stats" \
     --filtering-stats "$OUTPUT_DIR/somatic.filtering_stats.tsv" \
     -O "$OUTPUT_DIR/somatic.filtered.vcf.gz"
+
+bcftools view -f PASS -Oz \
+    -o "$OUTPUT_DIR/somatic.filtered.PASS.vcf.gz" \
+    "$OUTPUT_DIR/somatic.filtered.vcf.gz"
+bcftools index --tbi --force "$OUTPUT_DIR/somatic.filtered.PASS.vcf.gz"
