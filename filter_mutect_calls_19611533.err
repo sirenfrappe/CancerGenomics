@@ -1,0 +1,51 @@
+WARNING: GATK v4.2.6.1 support for Java 11 is in beta state. Use at your own risk.
+Using GATK jar /mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx6g -XX:ActiveProcessorCount=4 -jar /mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar FilterMutectCalls -R /data/users/qwang/input/VAR_CALLING/reference/ref_genome.fa -V /data/users/qwang/CancerGenomics/output/07_variant_calling/somatic.vcf.gz --stats /data/users/qwang/CancerGenomics/output/07_variant_calling/somatic.vcf.gz.stats --filtering-stats /data/users/qwang/CancerGenomics/output/07_variant_calling/somatic.filtering_stats.tsv -O /data/users/qwang/CancerGenomics/output/07_variant_calling/somatic.filtered.vcf.gz
+14:56:09.878 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+14:56:10.121 INFO  FilterMutectCalls - ------------------------------------------------------------
+14:56:10.121 INFO  FilterMutectCalls - The Genome Analysis Toolkit (GATK) v4.2.6.1
+14:56:10.121 INFO  FilterMutectCalls - For support and documentation go to https://software.broadinstitute.org/gatk/
+14:56:10.122 INFO  FilterMutectCalls - Executing as qwang@binfservas03 on Linux v4.18.0-553.85.1.el8_10.x86_64 amd64
+14:56:10.122 INFO  FilterMutectCalls - Java runtime: OpenJDK 64-Bit Server VM v11.0.18+10
+14:56:10.122 INFO  FilterMutectCalls - Start Date/Time: October 13, 2026 at 2:56:09 PM CEST
+14:56:10.122 INFO  FilterMutectCalls - ------------------------------------------------------------
+14:56:10.122 INFO  FilterMutectCalls - ------------------------------------------------------------
+14:56:10.123 INFO  FilterMutectCalls - HTSJDK Version: 2.24.1
+14:56:10.124 INFO  FilterMutectCalls - Picard Version: 2.27.1
+14:56:10.124 INFO  FilterMutectCalls - Built for Spark Version: 2.4.5
+14:56:10.124 INFO  FilterMutectCalls - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+14:56:10.124 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+14:56:10.124 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+14:56:10.124 INFO  FilterMutectCalls - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+14:56:10.124 INFO  FilterMutectCalls - Deflater: IntelDeflater
+14:56:10.125 INFO  FilterMutectCalls - Inflater: IntelInflater
+14:56:10.125 INFO  FilterMutectCalls - GCS max retries/reopens: 20
+14:56:10.125 INFO  FilterMutectCalls - Requester pays: disabled
+14:56:10.125 INFO  FilterMutectCalls - Initializing engine
+14:56:10.544 INFO  FeatureManager - Using codec VCFCodec to read file file:///data/users/qwang/CancerGenomics/output/07_variant_calling/somatic.vcf.gz
+14:56:10.729 WARN  IntelInflater - Zero Bytes Written : 0
+14:56:10.740 WARN  IntelInflater - Zero Bytes Written : 0
+14:56:10.748 INFO  FilterMutectCalls - Done initializing engine
+14:56:10.885 INFO  ProgressMeter - Starting traversal
+14:56:10.885 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+14:56:10.886 INFO  FilterMutectCalls - Starting pass 0 through the variants
+14:56:10.888 WARN  IntelInflater - Zero Bytes Written : 0
+14:56:11.512 INFO  FilterMutectCalls - Finished pass 0 through the variants
+14:56:11.736 INFO  FilterMutectCalls - Starting pass 1 through the variants
+14:56:11.737 WARN  IntelInflater - Zero Bytes Written : 0
+14:56:12.007 INFO  FilterMutectCalls - Finished pass 1 through the variants
+14:56:12.041 INFO  FilterMutectCalls - Starting pass 2 through the variants
+14:56:12.042 WARN  IntelInflater - Zero Bytes Written : 0
+14:56:12.209 INFO  FilterMutectCalls - Finished pass 2 through the variants
+14:56:12.209 INFO  FilterMutectCalls - Starting pass 3 through the variants
+14:56:12.211 WARN  IntelInflater - Zero Bytes Written : 0
+14:56:12.495 INFO  FilterMutectCalls - Finished pass 3 through the variants
+14:56:12.509 INFO  FilterMutectCalls - No variants filtered by: AllowAllVariantsVariantFilter
+14:56:12.510 INFO  FilterMutectCalls - 0 read(s) filtered by: AllowAllReadsReadFilter 
+
+14:56:12.510 INFO  ProgressMeter -        chr6:26896035              0.0                  1868          68972.3
+14:56:12.510 INFO  ProgressMeter - Traversal complete. Processed 1868 total variants in 0.0 minutes.
+14:56:12.518 INFO  FilterMutectCalls - Shutting down engine
+[October 13, 2026 at 2:56:12 PM CEST] org.broadinstitute.hellbender.tools.walkers.mutect.filtering.FilterMutectCalls done. Elapsed time: 0.05 minutes.
+Runtime.totalMemory()=2147483648
