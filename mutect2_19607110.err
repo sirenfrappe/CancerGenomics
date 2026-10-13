@@ -1,0 +1,109 @@
+WARNING: GATK v4.2.6.1 support for Java 11 is in beta state. Use at your own risk.
+Using GATK jar /mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx24g -XX:ActiveProcessorCount=4 -jar /mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar Mutect2 -R /data/users/qwang/input/VAR_CALLING/reference/ref_genome.fa --intervals /data/users/qwang/input/VAR_CALLING/reference/exome_regions.bed.interval_list -I /data/users/qwang/input/VAR_CALLING/alignments/tumor.recal.bam -I /data/users/qwang/input/VAR_CALLING/alignments/normal.recal.bam -normal normal --germline-resource /data/users/qwang/input/VAR_CALLING/resources/af-only-gnomad.hg38.subset.vcf.gz --panel-of-normals /data/users/qwang/input/VAR_CALLING/resources/1000g_pon.hg38.subset.vcf.gz -O /data/users/qwang/CancerGenomics/output/07_variant_calling/somatic.vcf.gz
+13:35:04.902 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+13:35:04.999 INFO  Mutect2 - ------------------------------------------------------------
+13:35:04.999 INFO  Mutect2 - The Genome Analysis Toolkit (GATK) v4.2.6.1
+13:35:04.999 INFO  Mutect2 - For support and documentation go to https://software.broadinstitute.org/gatk/
+13:35:05.000 INFO  Mutect2 - Executing as qwang@binfservas38.ibu.internal on Linux v4.18.0-553.85.1.el8_10.x86_64 amd64
+13:35:05.000 INFO  Mutect2 - Java runtime: OpenJDK 64-Bit Server VM v11.0.18+10
+13:35:05.000 INFO  Mutect2 - Start Date/Time: October 13, 2026 at 1:35:04 PM CEST
+13:35:05.000 INFO  Mutect2 - ------------------------------------------------------------
+13:35:05.000 INFO  Mutect2 - ------------------------------------------------------------
+13:35:05.000 INFO  Mutect2 - HTSJDK Version: 2.24.1
+13:35:05.000 INFO  Mutect2 - Picard Version: 2.27.1
+13:35:05.001 INFO  Mutect2 - Built for Spark Version: 2.4.5
+13:35:05.001 INFO  Mutect2 - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+13:35:05.001 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+13:35:05.001 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+13:35:05.001 INFO  Mutect2 - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+13:35:05.001 INFO  Mutect2 - Deflater: IntelDeflater
+13:35:05.001 INFO  Mutect2 - Inflater: IntelInflater
+13:35:05.001 INFO  Mutect2 - GCS max retries/reopens: 20
+13:35:05.001 INFO  Mutect2 - Requester pays: disabled
+13:35:05.001 INFO  Mutect2 - Initializing engine
+WARNING: BAM index file /data/users/qwang/input/VAR_CALLING/alignments/normal.recal.bai is older than BAM /data/users/qwang/input/VAR_CALLING/alignments/normal.recal.bam
+13:35:08.856 INFO  FeatureManager - Using codec VCFCodec to read file file:///data/users/qwang/input/VAR_CALLING/resources/1000g_pon.hg38.subset.vcf.gz
+13:35:10.414 INFO  FeatureManager - Using codec VCFCodec to read file file:///data/users/qwang/input/VAR_CALLING/resources/af-only-gnomad.hg38.subset.vcf.gz
+13:35:12.423 INFO  FeatureManager - Using codec IntervalListCodec to read file file:///data/users/qwang/input/VAR_CALLING/reference/exome_regions.bed.interval_list
+13:35:12.665 INFO  IntervalArgumentCollection - Processing 6683920 bp from intervals
+13:35:12.730 INFO  Mutect2 - Done initializing engine
+13:35:12.763 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar!/com/intel/gkl/native/libgkl_utils.so
+13:35:12.767 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/mnt/ss/sib/ibu/rocky8/2023072800/software/GATK/4.2.6.1-GCCcore-10.3.0-Java-11/gatk-package-4.2.6.1-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+13:35:12.786 INFO  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+13:35:12.787 INFO  IntelPairHmm - Available threads: 4
+13:35:12.787 INFO  IntelPairHmm - Requested threads: 4
+13:35:12.787 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+13:35:12.816 INFO  ProgressMeter - Starting traversal
+13:35:12.817 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+13:35:23.722 INFO  ProgressMeter -          chr6:325395              0.2                    20            110.0
+13:35:33.723 INFO  ProgressMeter -         chr6:3137277              0.3                   250            717.5
+13:35:43.734 INFO  ProgressMeter -        chr6:13615610              0.5                  1100           2134.7
+13:35:53.775 INFO  ProgressMeter -        chr6:25798730              0.7                  1880           2754.0
+13:36:03.784 INFO  ProgressMeter -        chr6:30007274              0.8                  2730           3213.8
+13:36:13.905 INFO  ProgressMeter -        chr6:36375801              1.0                  5450           5352.9
+13:36:25.532 INFO  ProgressMeter -        chr6:38872777              1.2                  5860           4835.3
+13:36:37.979 INFO  ProgressMeter -        chr6:38938218              1.4                  5890           4149.7
+13:36:48.057 INFO  ProgressMeter -        chr6:42103698              1.6                  6310           3975.2
+13:36:58.100 INFO  ProgressMeter -        chr6:45014746              1.8                  7270           4143.1
+13:37:08.606 INFO  ProgressMeter -        chr6:57924580              1.9                  8470           4389.0
+13:37:18.697 INFO  ProgressMeter -        chr6:70533704              2.1                  8870           4227.8
+13:37:28.760 INFO  ProgressMeter -        chr6:79921589              2.3                  9500           4192.9
+13:37:38.791 INFO  ProgressMeter -        chr6:89789825              2.4                 10330           4246.0
+13:37:49.273 INFO  ProgressMeter -       chr6:100889942              2.6                 10800           4141.7
+13:37:59.480 INFO  ProgressMeter -       chr6:111262219              2.8                 11630           4186.9
+13:38:09.923 INFO  ProgressMeter -       chr6:118275385              3.0                 12180           4126.3
+13:38:20.034 INFO  ProgressMeter -       chr6:129280042              3.1                 12730           4079.8
+13:38:30.074 INFO  ProgressMeter -       chr6:134965223              3.3                 13270           4036.4
+13:38:40.204 INFO  ProgressMeter -       chr6:144191496              3.5                 13960           4038.8
+13:38:50.247 INFO  ProgressMeter -       chr6:152308407              3.6                 14740           4067.5
+13:39:00.303 INFO  ProgressMeter -       chr6:159778133              3.8                 15410           4064.4
+13:39:10.435 INFO  ProgressMeter -       chr6:167995812              4.0                 16060           4055.2
+13:39:27.070 INFO  ProgressMeter -        chr17:1516416              4.2                 16560           3907.9
+13:39:37.830 INFO  ProgressMeter -        chr17:1776515              4.4                 16730           3787.7
+13:39:47.900 INFO  ProgressMeter -        chr17:4075076              4.6                 17370           3788.7
+13:39:57.968 INFO  ProgressMeter -        chr17:6455309              4.8                 18100           3808.5
+13:40:08.096 INFO  ProgressMeter -        chr17:7831048              4.9                 18970           3854.7
+13:40:18.208 INFO  ProgressMeter -       chr17:10497704              5.1                 19790           3888.1
+13:40:28.221 INFO  ProgressMeter -       chr17:16734925              5.3                 20480           3896.0
+13:40:38.305 INFO  ProgressMeter -       chr17:18261087              5.4                 20970           3865.6
+13:40:48.322 INFO  ProgressMeter -       chr17:19940797              5.6                 21530           3850.3
+13:40:58.337 INFO  ProgressMeter -       chr17:28695342              5.8                 22240           3862.0
+13:41:08.394 INFO  ProgressMeter -       chr17:32477490              5.9                 23270           3926.6
+13:41:18.453 INFO  ProgressMeter -       chr17:39906882              6.1                 24760           4063.1
+13:41:28.519 INFO  ProgressMeter -       chr17:41898556              6.3                 25640           4094.7
+13:41:38.941 INFO  ProgressMeter -       chr17:44375960              6.4                 26770           4159.8
+13:41:49.065 INFO  ProgressMeter -       chr17:47683450              6.6                 27660           4188.3
+13:41:59.129 INFO  ProgressMeter -       chr17:50596705              6.8                 28530           4213.0
+13:42:09.251 INFO  ProgressMeter -       chr17:57120195              6.9                 28970           4174.0
+13:42:19.266 INFO  ProgressMeter -       chr17:60043517              7.1                 29620           4167.4
+13:42:29.347 INFO  ProgressMeter -       chr17:63267689              7.3                 30140           4142.7
+13:42:39.564 INFO  ProgressMeter -       chr17:67077768              7.4                 30930           4154.0
+13:42:49.623 INFO  ProgressMeter -       chr17:70912612              7.6                 31490           4136.1
+13:42:59.738 INFO  ProgressMeter -       chr17:75098019              7.8                 31980           4109.5
+13:43:09.771 INFO  ProgressMeter -       chr17:76391216              7.9                 32750           4119.9
+13:43:19.957 INFO  ProgressMeter -       chr17:79085196              8.1                 33370           4110.1
+13:43:32.250 INFO  ProgressMeter -       chr17:81416314              8.3                 33940           4077.4
+13:43:42.260 INFO  ProgressMeter -       chr17:82830058              8.5                 34590           4073.9
+13:43:43.606 INFO  Mutect2 - 1356254 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappingQualityNotZeroReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+2804051 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonChimericOriginalAlignmentReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: ReadLengthReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+4160305 total reads filtered
+13:43:43.606 INFO  ProgressMeter -       chr17:83239987              8.5                 34653           4070.5
+13:43:43.606 INFO  ProgressMeter - Traversal complete. Processed 34653 total regions in 8.5 minutes.
+13:43:43.670 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.197465955
+13:43:43.671 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 12.633590444000001
+13:43:43.671 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 7.61 sec
+13:43:43.671 INFO  Mutect2 - Shutting down engine
+[October 13, 2026 at 1:43:43 PM CEST] org.broadinstitute.hellbender.tools.walkers.mutect.Mutect2 done. Elapsed time: 8.65 minutes.
+Runtime.totalMemory()=2147483648
