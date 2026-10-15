@@ -17,8 +17,9 @@ PROJECT_DIR=/data/users/qwang/CancerGenomics
 IMAGE="$(dirname "$PROJECT_DIR")/vep_116.2.sif"
 CACHE_DIR="$(dirname "$PROJECT_DIR")/vep_cache"
 export APPTAINER_CACHEDIR="$(dirname "$PROJECT_DIR")/.apptainer/cache"
+export APPTAINER_TMPDIR="$(dirname "$PROJECT_DIR")/.apptainer/tmp"
 
-mkdir -p "$CACHE_DIR" "$APPTAINER_CACHEDIR"
+mkdir -p "$CACHE_DIR" "$APPTAINER_CACHEDIR" "$APPTAINER_TMPDIR"
 
 apptainer pull "$IMAGE" docker://ensemblorg/ensembl-vep:release_116.2
 
