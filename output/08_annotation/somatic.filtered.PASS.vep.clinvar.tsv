@@ -1,0 +1,169 @@
+## ENSEMBL VARIANT EFFECT PREDICTOR v116.2
+## Output produced at 2026-10-15 15:47:00
+## Using cache in /data/users/qwang/vep_cache/homo_sapiens/116_GRCh38
+## Using API version 116, DB version ?
+## ensembl version 116.0d85231
+## ensembl-compara version 116.dc107cc
+## ensembl-funcgen version 116.90049ea
+## ensembl-io version 116.6afb5dc
+## ensembl-variation version 116.db7394a
+## 1000genomes version phase3
+## COSMIC version 102
+## ClinVar version 202509
+## HGMD-PUBLIC version 20204
+## assembly version GRCh38.p14
+## dbSNP version 156
+## gencode version GENCODE 50
+## genebuild version GENCODE50
+## gnomADe version v4.1
+## gnomADg version v4.1
+## polyphen version 2.2.3
+## regbuild version 1.0
+## sift version 6.2.1
+## Column descriptions:
+## Uploaded_variation : Identifier of uploaded variant
+## Location : Location of variant in standard coordinate format (chr:start or chr:start-end)
+## Allele : The variant allele used to calculate the consequence
+## SYMBOL : Gene symbol (e.g. HGNC)
+## Consequence : Consequence type
+## IMPACT : Subjective impact classification of consequence type
+## SIFT : SIFT prediction and/or score
+## PolyPhen : PolyPhen prediction and/or score
+## ClinVar_CLNSIG : Aggregate germline classification for this single variant; multiple values are separated by a vertical bar. CLNSIG field from [PATH]/clinvar.vcf.gz
+## ClinVar_CLNREVSTAT : ClinVar review status of germline classification for the Variation ID. CLNREVSTAT field from [PATH]/clinvar.vcf.gz
+## ClinVar_CLNDN : ClinVar's preferred disease name for the concept specified by disease identifiers in CLNDISDB. CLNDN field from [PATH]/clinvar.vcf.gz
+## VEP command-line: vep --assembly GRCh38 --cache --custom file=[PATH]/clinvar.vcf.gz,short_name=ClinVar,format=vcf,type=exact,coords=0,fields=CLNSIG%CLNREVSTAT%CLNDN --database 0 --dir_cache [PATH]/vep_cache --dir_plugins /plugins --fields Uploaded_variation,Location,Allele,SYMBOL,Consequence,IMPACT,SIFT,PolyPhen,ClinVar_CLNSIG,ClinVar_CLNREVSTAT,ClinVar_CLNDN --force_overwrite --format vcf --input_file [PATH]/somatic.filtered.PASS.vcf.gz --offline --output_file [PATH]/somatic.filtered.PASS.vep.clinvar.tsv --pick --polyphen b --sift b --symbol --tab
+#Uploaded_variation	Location	Allele	SYMBOL	Consequence	IMPACT	SIFT	PolyPhen	ClinVar_CLNSIG	ClinVar_CLNREVSTAT	ClinVar_CLNDN
+chr6_325357_G/A	chr6:325357	A	DUSP22	intron_variant	MODIFIER	-	-	-	-	-
+chr6_325783_G/C	chr6:325783	C	DUSP22	intron_variant	MODIFIER	-	-	-	-	-
+chr6_325901_G/A	chr6:325901	A	DUSP22	intron_variant	MODIFIER	-	-	-	-	-
+chr6_325916_GTGCTGTATCTGCTGGTGCCTGGAGAGTCATCTGCGCTGGGCTTCTGCGTCCTGGTGTGTGCAA/G	chr6:325917-325979	-	DUSP22	intron_variant	MODIFIER	-	-	-	-	-
+chr6_1916336_G/A	chr6:1916336	A	GMDS	intron_variant	MODIFIER	-	-	-	-	-
+chr6_1930220_GA/TT	chr6:1930220-1930221	TT	GMDS	stop_gained	HIGH	-	-	-	-	-
+chr6_2674999_A/C	chr6:2674999	C	MYLK4	intron_variant	MODIFIER	-	-	-	-	-
+chr6_2834013_C/G	chr6:2834013	G	SERPINB1	splice_acceptor_variant	HIGH	-	-	-	-	-
+chr6_2840548_C/T	chr6:2840548	T	SERPINB1	synonymous_variant	LOW	-	-	Benign	criteria_provided,_single_submitter	not_provided
+chr6_3723708_C/G	chr6:3723708	G	PXDC1	missense_variant	MODERATE	tolerated(0.05)	benign(0)	-	-	-
+chr6_6250887_T/A	chr6:6250887	A	F13A1	missense_variant	MODERATE	tolerated(0.45)	probably_damaging(0.981)	Likely_benign	criteria_provided,_multiple_submitters,_no_conflicts	Factor_XIII,_A_subunit,_deficiency_of|not_provided
+chr6_7176847_C/G	chr6:7176847	G	RREB1	intron_variant	MODIFIER	-	-	-	-	-
+chr6_7585458_C/T	chr6:7585458	T	SNRNP48	upstream_gene_variant	MODIFIER	-	-	-	-	-
+chr6_7833697_C/T	chr6:7833697	T	BMP6	intron_variant	MODIFIER	-	-	-	-	-
+chr6_8054329_T/C	chr6:8054329	C	BLOC1S5	intron_variant	MODIFIER	-	-	-	-	-
+chr6_10398435_C/T	chr6:10398435	T	TFAP2A	synonymous_variant	LOW	-	-	Likely_benign	no_assertion_criteria_provided	TFAP2A-related_disorder
+chr6_10801908_C/G	chr6:10801908	G	MAK	missense_variant	MODERATE	deleterious(0)	probably_damaging(0.999)	-	-	-
+chr6_10989772_G/A	chr6:10989772	A	ELOVL2	synonymous_variant	LOW	-	-	-	-	-
+chr6_11306007_G/A	chr6:11306007	A	NEDD9	5_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_16147945_G/A	chr6:16147945	A	MYLIP	3_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_17828388_A/G	chr6:17828388	G	KIF13A	intron_variant	MODIFIER	-	-	-	-	-
+chr6_24301935_T/C	chr6:24301935	C	DCDC2	intron_variant	MODIFIER	-	-	Likely_benign	criteria_provided,_multiple_submitters,_no_conflicts	not_provided
+chr6_24476174_C/T	chr6:24476174	T	GPLD1	splice_region_variant,intron_variant	LOW	-	-	-	-	-
+chr6_24579828_G/C	chr6:24579828	C	KIAA0319	intron_variant	MODIFIER	-	-	-	-	-
+chr6_24601012_G/A	chr6:24601012	A	KIAA0319	intron_variant	MODIFIER	-	-	-	-	-
+chr6_25075434_C/A	chr6:25075434	A	-	intron_variant,non_coding_transcript_variant	MODIFIER	-	-	-	-	-
+chr6_25510468_CAT/C	chr6:25510469-25510470	-	CARMIL1	intron_variant	MODIFIER	-	-	-	-	-
+chr6_25777954_C/T	chr6:25777954	T	SLC17A4	stop_gained	HIGH	-	-	-	-	-
+chr6_26020708_C/T	chr6:26020708	T	H3C1	synonymous_variant	LOW	-	-	-	-	-
+chr6_26925229_C/T	chr6:26925229	T	-	non_coding_transcript_exon_variant	MODIFIER	-	-	-	-	-
+chr6_27268871_G/A	chr6:27268871	A	CDCA7P1	non_coding_transcript_exon_variant	MODIFIER	-	-	-	-	-
+chr6_28227743_A/G	chr6:28227743	G	ZSCAN9	synonymous_variant	LOW	-	-	-	-	-
+chr6_29174126_C/T	chr6:29174126	T	OR2J2	missense_variant	MODERATE	tolerated(0.18)	benign(0.045)	-	-	-
+chr6_30058513_T/C	chr6:30058513	C	POLR1H	upstream_gene_variant	MODIFIER	-	-	-	-	-
+chr6_30606180_G/GTATCTTTTCCTGCATTATCCCCTTTGATTGAAT	chr6:30606180-30606181	TATCTTTTCCTGCATTATCCCCTTTGATTGAAT	PPP1R10	protein_altering_variant	MODERATE	-	-	-	-	-
+chr6_32181196_G/T	chr6:32181196	T	PBX2	downstream_gene_variant	MODIFIER	-	-	-	-	-
+chr6_32192450_C/T	chr6:32192450	T	GPSM3	intron_variant	MODIFIER	-	-	-	-	-
+chr6_34133501_G/A	chr6:34133501	A	GRM4	5_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_35833696_G/A	chr6:35833696	A	SRPK1	3_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_36326423_T/C	chr6:36326423	C	BNIP5	intron_variant	MODIFIER	-	-	-	-	-
+chr6_36327087_A/G	chr6:36327087	G	BNIP5	synonymous_variant	LOW	-	-	-	-	-
+chr6_36330487_A/G	chr6:36330487	G	BNIP5	synonymous_variant	LOW	-	-	-	-	-
+chr6_36400499_C/T	chr6:36400499	T	PXT1	synonymous_variant	LOW	-	-	-	-	-
+chr6_36436686_T/C	chr6:36436686	C	PXT1	intron_variant	MODIFIER	-	-	-	-	-
+chr6_36470072_G/T	chr6:36470072	T	KCTD20	5_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_36494364_G/A	chr6:36494364	A	STK38	3_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_36599669_G/C	chr6:36599669	C	SRSF3	intron_variant	MODIFIER	-	-	-	-	-
+chr6_36871822_C/G	chr6:36871822	G	PPIL1	missense_variant	MODERATE	deleterious_low_confidence(0)	-	-	-	-
+chr6_37312940_C/T	chr6:37312940	T	TBC1D22B	synonymous_variant	LOW	-	-	-	-	-
+chr6_37654299_C/T	chr6:37654299	T	MDGA1	synonymous_variant	LOW	-	-	-	-	-
+chr6_39189705_C/G	chr6:39189705	G	KCNK5	3_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_42077109_G/C	chr6:42077109	C	TAF8	missense_variant	MODERATE	tolerated(0.11)	possibly_damaging(0.631)	-	-	-
+chr6_42367539_G/A	chr6:42367539	A	TRERF1	intron_variant	MODIFIER	-	-	-	-	-
+chr6_42592188_G/A	chr6:42592188	A	UBR2	missense_variant	MODERATE	tolerated_low_confidence(0.08)	benign(0.009)	-	-	-
+chr6_43116660_A/G	chr6:43116660	G	PTK7	intron_variant	MODIFIER	-	-	-	-	-
+chr6_43142265_C/T	chr6:43142265	T	PTK7	synonymous_variant	LOW	-	-	Benign	criteria_provided,_single_submitter	not_provided
+chr6_43187096_G/T	chr6:43187096	T	CUL9	splice_donor_variant	HIGH	-	-	-	-	-
+chr6_43283595_A/T	chr6:43283595	T	TTBK1	missense_variant	MODERATE	deleterious_low_confidence(0)	probably_damaging(0.952)	-	-	-
+chr6_43340178_C/G	chr6:43340178	G	ZNF318	missense_variant	MODERATE	deleterious(0)	probably_damaging(1)	-	-	-
+chr6_43573453_C/T	chr6:43573453	T	POLH	upstream_gene_variant	MODIFIER	-	-	-	-	-
+chr6_43587457_G/A	chr6:43587457	A	POLH	missense_variant	MODERATE	tolerated(0.46)	benign(0.013)	Uncertain_significance	criteria_provided,_multiple_submitters,_no_conflicts	not_provided|Xeroderma_pigmentosum_variant_type
+chr6_44181247_TC/T	chr6:44181248	-	CAPN11	splice_region_variant,splice_polypyrimidine_tract_variant,intron_variant	LOW	-	-	-	-	-
+chr6_44181251_G/T	chr6:44181251	T	CAPN11	splice_acceptor_variant	HIGH	-	-	-	-	-
+chr6_44343814_A/T	chr6:44343814	T	SPATS1	intron_variant	MODIFIER	-	-	-	-	-
+chr6_44828922_C/T	chr6:44828922	T	SUPT3H	3_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_44953376_G/C	chr6:44953376	C	SUPT3H	synonymous_variant	LOW	-	-	-	-	-
+chr6_46662452_C/G	chr6:46662452	G	SLC25A27	missense_variant	MODERATE	deleterious(0)	probably_damaging(0.913)	-	-	-
+chr6_47000272_C/T	chr6:47000272	T	ADGRF1	missense_variant	MODERATE	tolerated(0.07)	benign(0.013)	-	-	-
+chr6_49493060_T/G	chr6:49493060	G	CENPQ	3_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_52498817_G/A	chr6:52498817	A	EFHC1	downstream_gene_variant	MODIFIER	-	-	-	-	-
+chr6_52498961_A/G	chr6:52498961	G	EFHC1	downstream_gene_variant	MODIFIER	-	-	-	-	-
+chr6_52978459_G/A	chr6:52978459	A	GSTA4	3_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_53647977_A/T	chr6:53647977	T	KLHL31	3_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr6_55327603_C/T	chr6:55327603	T	GFRAL	intron_variant	MODIFIER	-	-	-	-	-
+chr6_55351465_G/C	chr6:55351465	C	GFRAL	missense_variant	MODERATE	deleterious(0)	probably_damaging(1)	-	-	-
+chr6_70190344_G/C	chr6:70190344	C	COL19A1	missense_variant	MODERATE	deleterious(0.02)	possibly_damaging(0.899)	-	-	-
+chr6_72292063_G/A	chr6:72292063	A	RIMS1	intron_variant	MODIFIER	-	-	-	-	-
+chr6_73363141_CTTGATTCACGTGAATCGATTGGACCCTAACG/C	chr6:73363142-73363172	-	KHDC3L	frameshift_variant	HIGH	-	-	-	-	-
+chr6_73363176_AG/A	chr6:73363177	-	KHDC3L	frameshift_variant	HIGH	-	-	-	-	-
+chr6_79916661_G/T	chr6:79916661	T	ELOVL4	missense_variant	MODERATE	tolerated(0.3)	benign(0.035)	-	-	-
+chr6_83523696_G/A	chr6:83523696	A	PRSS35	synonymous_variant	LOW	-	-	-	-	-
+chr6_89623565_G/T	chr6:89623565	T	ANKRD6	intron_variant	MODIFIER	-	-	-	-	-
+chr6_109451608_G/T	chr6:109451608	T	MICAL1	missense_variant	MODERATE	deleterious(0)	probably_damaging(1)	-	-	-
+chr6_118491774_G/A	chr6:118491774	A	CEP85L	missense_variant	MODERATE	deleterious(0)	possibly_damaging(0.63)	-	-	-
+chr6_122781240_C/G	chr6:122781240	G	FABP7	intron_variant	MODIFIER	-	-	-	-	-
+chr6_131710979_C/G	chr6:131710979	G	ENPP3	intron_variant	MODIFIER	-	-	-	-	-
+chr6_142760564_T/C	chr6:142760564	C	HIVEP2	synonymous_variant	LOW	-	-	-	-	-
+chr6_152325134_C/T	chr6:152325134	T	SYNE1	missense_variant	MODERATE	-	benign(0.429)	-	-	-
+chr6_152326289_G/A	chr6:152326289	A	SYNE1	splice_region_variant,intron_variant	LOW	-	-	-	-	-
+chr6_157133136_G/C	chr6:157133136	C	ARID1B	missense_variant	MODERATE	deleterious_low_confidence(0)	possibly_damaging(0.707)	Uncertain_significance	criteria_provided,_single_submitter	ARID1B-related_disorder
+chr6_158983649_G/T	chr6:158983649	T	RSPH3	intron_variant	MODIFIER	-	-	-	-	-
+chr6_160711032_GGTGTCTTGTGAAA/G	chr6:160711033-160711045	-	PLG	intron_variant	MODIFIER	-	-	-	-	-
+chr6_170745825_G/A	chr6:170745825	A	RPL23AP47	non_coding_transcript_exon_variant	MODIFIER	-	-	-	-	-
+chr17_2364457_T/G	chr17:2364457	G	SGSM2	intron_variant	MODIFIER	-	-	-	-	-
+chr17_3433669_G/T	chr17:3433669	T	OR1E2	missense_variant	MODERATE	deleterious_low_confidence(0)	probably_damaging(0.981)	-	-	-
+chr17_4545725_T/C	chr17:4545725	C	MYBBP1A	missense_variant	MODERATE	deleterious(0.01)	probably_damaging(0.993)	-	-	-
+chr17_4818361_TGGACAGAATCCTGAA/T	chr17:4818362-4818376	-	PLD2	inframe_deletion	MODERATE	-	-	-	-	-
+chr17_5007047_C/T	chr17:5007047	T	KIF1C	missense_variant	MODERATE	deleterious_low_confidence(0.02)	benign(0.081)	-	-	-
+chr17_7482494_C/A	chr17:7482494	A	SLC35G6	synonymous_variant	LOW	-	-	-	-	-
+chr17_7588500_G/C	chr17:7588500	C	SOX15	missense_variant	MODERATE	tolerated_low_confidence(0.12)	benign(0.036)	-	-	-
+chr17_7675088_C/T	chr17:7675088	T	TP53	missense_variant	MODERATE	tolerated(0.08)	-	Pathogenic	reviewed_by_expert_panel	Li-Fraumeni_syndrome|Neoplasm|Lip_and_oral_cavity_carcinoma|Gastric_cancer|Li-Fraumeni_syndrome_1|Adrenocortical_carcinoma,_hereditary|Breast_neoplasm|Carcinoma_of_pancreas|Choroid_plexus_papilloma|Bone_osteosarcoma|Glioma_susceptibility_1|Colorectal_cancer|Nasopharyngeal_carcinoma|Familial_cancer_of_breast|Hepatocellular_carcinoma|Bone_marrow_failure_syndrome_5|Basal_cell_carcinoma,_susceptibility_to,_7|Ovarian_neoplasm|Malignant_tumor_of_esophagus|Squamous_cell_carcinoma_of_the_head_and_neck|not_provided|Hereditary_cancer-predisposing_syndrome
+chr17_9959188_C/G	chr17:9959188	G	GAS7	intron_variant	MODIFIER	-	-	-	-	-
+chr17_10499041_G/A	chr17:10499041	A	MYH1	missense_variant	MODERATE	deleterious_low_confidence(0.01)	benign(0.005)	-	-	-
+chr17_11784435_G/C	chr17:11784435	C	DNAH9	missense_variant	MODERATE	tolerated_low_confidence(0.18)	benign(0.005)	-	-	-
+chr17_18119985_C/T	chr17:18119985	T	MYO15A	synonymous_variant	LOW	-	-	Likely_benign	criteria_provided,_single_submitter	not_provided
+chr17_18143814_G/A	chr17:18143814	A	MYO15A	intron_variant	MODIFIER	-	-	Likely_benign	criteria_provided,_multiple_submitters,_no_conflicts	not_provided|not_specified
+chr17_28711571_G/T	chr17:28711571	T	RAB34	downstream_gene_variant	MODIFIER	-	-	-	-	-
+chr17_29286060_C/G	chr17:29286060	G	NUFIP2	missense_variant	MODERATE	deleterious(0.03)	benign(0.412)	-	-	-
+chr17_35194175_G/T	chr17:35194175	T	SLC35G3	missense_variant	MODERATE	deleterious(0.01)	benign(0.021)	-	-	-
+chr17_35522730_G/C	chr17:35522730	C	SLFN12L	5_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr17_41516976_G/A	chr17:41516976	A	KRT15	splice_polypyrimidine_tract_variant,intron_variant	LOW	-	-	-	-	-
+chr17_41771694_GTGTACTGGCGCCCGCAGGCCTCATCCTCCTCCATGATGCCCT/G	chr17:41771695-41771736	-	JUP	inframe_deletion	MODERATE	-	-	-	-	-
+chr17_44777930_C/G	chr17:44777930	G	ADAM11	intron_variant	MODIFIER	-	-	-	-	-
+chr17_44929040_G/A	chr17:44929040	A	KIF18B	splice_polypyrimidine_tract_variant,intron_variant	LOW	-	-	-	-	-
+chr17_45119014_TAGACGGTCGTTGTTG/T	chr17:45119015-45119029	-	PLCD3	inframe_deletion	MODERATE	-	-	-	-	-
+chr17_45608594_T/C	chr17:45608594	C	-	non_coding_transcript_exon_variant	MODIFIER	-	-	-	-	-
+chr17_45845905_C/T	chr17:45845905	T	SPPL2C	synonymous_variant	LOW	-	-	-	-	-
+chr17_47683246_TC/GT	chr17:47683246-47683247	GT	KPNB1	3_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr17_55720816_G/A	chr17:55720816	A	TMEM100	synonymous_variant	LOW	-	-	-	-	-
+chr17_58249650_C/T	chr17:58249650	T	LPO	synonymous_variant	LOW	-	-	-	-	-
+chr17_66884824_C/A	chr17:66884824	A	CACNG5	intron_variant	MODIFIER	-	-	-	-	-
+chr17_68554851_G/T	chr17:68554851	T	FAM20A	intron_variant	MODIFIER	-	-	-	-	-
+chr17_74771706_G/A	chr17:74771706	A	NHERF1	downstream_gene_variant	MODIFIER	-	-	-	-	-
+chr17_74795641_C/T	chr17:74795641	T	SLC38A12	intron_variant	MODIFIER	-	-	-	-	-
+chr17_74844321_C/T	chr17:74844321	T	GRIN2C	synonymous_variant	LOW	-	-	-	-	-
+chr17_76680930_C/G	chr17:76680930	G	MXRA7	intron_variant	MODIFIER	-	-	-	-	-
+chr17_78484883_A/T	chr17:78484883	T	DNAH17	missense_variant	MODERATE	deleterious_low_confidence(0)	benign(0.377)	-	-	-
+chr17_79083025_G/T	chr17:79083025	T	ENGASE	missense_variant	MODERATE	deleterious(0)	possibly_damaging(0.856)	-	-	-
+chr17_79690914_C/T	chr17:79690914	T	-	intron_variant,non_coding_transcript_variant	MODIFIER	-	-	-	-	-
+chr17_80050160_G/T	chr17:80050160	T	CCDC40	stop_gained	HIGH	-	-	-	-	-
+chr17_80086143_G/C	chr17:80086143	C	CCDC40	missense_variant	MODERATE	deleterious(0.03)	benign(0.027)	-	-	-
+chr17_82239123_G/C	chr17:82239123	C	SLC16A3	3_prime_UTR_variant	MODIFIER	-	-	-	-	-
+chr17_82961145_G/C	chr17:82961145	C	QTGAL	missense_variant	MODERATE	deleterious(0.02)	possibly_damaging(0.617)	-	-	-
