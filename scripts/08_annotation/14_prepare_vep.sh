@@ -21,8 +21,12 @@ export APPTAINER_TMPDIR="$(dirname "$PROJECT_DIR")/.apptainer/tmp"
 
 mkdir -p "$CACHE_DIR" "$APPTAINER_CACHEDIR" "$APPTAINER_TMPDIR"
 
-apptainer pull "$IMAGE" docker://ensemblorg/ensembl-vep:release_116.2
+if [ ! -f "$IMAGE" ]; then
+    apptainer pull "$IMAGE" docker://ensemblorg/ensembl-vep:release_116.2
+fi
 
-apptainer exec --bind /data "$IMAGE" INSTALL.pl \
-    -a c -s homo_sapiens -y GRCh38 \
-    --CACHE_VERSION 116 -c "$CACHE_DIR" --USE_HTTPS_PROTO
+curl -fL --retry 3 -C - \
+    -o "$CACHE_DIR/homo_sapiens_vep_116_GRCh38.tar.gz" \
+    https://ftp.ensembl.org/pub/release-116/variation/indexed_vep_cache/homo_sapiens_vep_116_GRCh38.tar.gz
+
+tar -xzf "$CACHE_DIR/homo_sapiens_vep_116_GRCh38.tar.gz" -C "$CACHE_DIR"
