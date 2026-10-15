@@ -27,9 +27,9 @@ apptainer exec --bind /data "$IMAGE" vep \
     -i "$PROJECT_DIR/output/07_variant_calling/somatic.filtered.PASS.vcf.gz" \
     --cache --dir_cache "$CACHE_DIR" \
     --species homo_sapiens --assembly GRCh38 --offline \
-    --format vcf --symbol --sift b --polyphen b --pick \
+    --format vcf --symbol --sift b --polyphen b --pick --variant_class --biotype \
     --custom "file=$CLINVAR,short_name=ClinVar,format=vcf,type=exact,coords=0,fields=CLNSIG%CLNREVSTAT%CLNDN" \
-    --tab --fields "Uploaded_variation,Location,Allele,SYMBOL,Consequence,IMPACT,SIFT,PolyPhen,ClinVar_CLNSIG,ClinVar_CLNREVSTAT,ClinVar_CLNDN" \
+    --tab --fields "Uploaded_variation,Location,Allele,SYMBOL,Consequence,IMPACT,SIFT,PolyPhen,ClinVar_CLNSIG,ClinVar_CLNREVSTAT,ClinVar_CLNDN,VARIANT_CLASS,BIOTYPE" \
     --force_overwrite -o "$ANNOTATED"
 
 apptainer exec --bind /data "$IMAGE" filter_vep \
