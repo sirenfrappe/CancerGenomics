@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=vep
-#SBATCH --partition=pshort_el8
+#SBATCH --partition=pibu_el8
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
@@ -9,6 +9,7 @@
 #SBATCH --account=class-407009-ws-2026
 #SBATCH --output=vep_%j.out
 #SBATCH --error=vep_%j.err
+#SBATCH --reservation=class-407009-2026-10-15
 
 set -euo pipefail
 

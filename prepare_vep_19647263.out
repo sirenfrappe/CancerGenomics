@@ -1,0 +1,4 @@
+Cannot use HTTPS protocol for downloading cache without HTML::TableExtract Perl library installed
+Skipping cache installation
+
+All done
